@@ -1,0 +1,17 @@
+<resources>
+    <string name="them">Thêm Sách</string>
+    <string name="Book">Thư viện sách</string>
+    <string name="action_search">Search</string>
+    <string name="Edit">Chỉnh sửa sách</string>
+    <string name="Read">Đọc sách</string>
+    <string name="Login">Đăng nhập</string>
+    <string name="Register">Đăng ký</string>
+    <string name="Saved">Đã thích</string>
+    <string name="Hello">Sách</string>
+    <string name="Detail">Chi tiết sách</string>
+    <string name="Chapter">Đọc sách</string>
+    <string name="AddChapter">Thêm trang</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

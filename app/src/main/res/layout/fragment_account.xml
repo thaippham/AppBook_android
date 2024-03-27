@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment"
+    android:background="@drawable/bg_acc"
+    android:orientation="vertical"
+    android:id="@+id/info">
+
+    <LinearLayout
+        android:id="@+id/info_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:elevation="2dp"
+        android:background="@drawable/profile"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/book_account"/>
+
+        <TextView
+            android:id="@+id/nameuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Thai"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/emailuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="example@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/profile"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/btn_login_signup">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/book_account"/>
+        <Button
+            android:id="@+id/login_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Đăng nhập"
+            android:background="@drawable/background_btn_intro1"
+            android:textColor="#6160DF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/signup_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Đăng ký"
+            android:background="@drawable/background_btn_intro2"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:gravity="bottom|center"
+        android:layout_marginTop="12dp"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/logout_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_user_logout"
+            android:textColor="@color/white"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/home_user"
+            android:padding="5dp"
+            android:drawablePadding="15dp"/>
+
+    </LinearLayout>
+</LinearLayout>

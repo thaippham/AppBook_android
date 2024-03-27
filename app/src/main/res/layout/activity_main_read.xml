@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/imgbook"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/blockchain"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sau Cành Violet"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/tvauthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tác giả: Ngô Tất Thắng"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:id="@+id/tvcategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Thể loại: Văn học Việt Nam"
+                    android:textColor="@color/lightgray"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tvviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Lượt xem: 59 Views"
+                    android:textColor="@color/lightgray"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/imgfollow"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:src="@drawable/bookmark_regular"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    app:tint="@color/orange"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_gravity="bottom"/>-->
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/btntitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Mô tả"
+                android:background="@drawable/layout_button"
+                android:textColor="@color/dark"
+                android:textSize="15sp"
+                />
+            <Button
+                android:id="@+id/btnsapxep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đảo chương"
+                android:background="@drawable/layout_button"
+                android:textColor="@color/dark"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="3dp"
+            android:scrollbars="vertical"
+            android:text="Sau Cành Violet là cuốn truyện tình báo của Ngô Tất Thắng viết về những chiến tích hào hùng của các chiến sĩ tình báo Việt Nam trong cuộc kháng chiến chống Mỹ cứu nước, giải phóng miền Nam.\n
+                Cuốn sách không tái hiện lại cuộc chiến đấu giữa ta và địch trên chiến trường đầy bom đạn mà đưa người đọc đến với một trận tuyến thầm lặng. Đó là hình ảnh của những chiến sĩ tình báo (như Hồng Giang và Hoài Phương – hai nhân vật trong truyện). Các chiến sĩ của ta ngày đêm vượt khó khăn, hiểm nguy tiến hành các hoạt động phản gián ngay trong guồng máy chính quyền ngụy và tổ chức gián điệp CIA của Mỹ tại Sài Gòn.\n
+                Những chiến công của họ chưa một lần được nêu danh trên đài báo nhưng đã góp phần không nhỏ vào thắng lợi chung của toàn dân tộc. Qua đó, người đọc thấy rõ sự mưu trí tài tình, lòng dũng cảm và trên hết là một đức hy sinh, hết lòng vì dân, vì nước của các chiến sĩ tình báo Việt Nam."
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/lvchapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btntitle"/>
+    </LinearLayout>
+</ScrollView>
